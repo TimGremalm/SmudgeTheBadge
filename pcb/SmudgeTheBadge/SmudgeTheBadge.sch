@@ -84,49 +84,38 @@ Wire Notes Line
 Wire Notes Line
 	4400 6450 4400 4600
 Text Notes 4500 4900 0    157  ~ 0
-Input Buttons
+Buttons
 $Comp
 L Switch:SW_Push SW1
 U 1 1 5E506B70
-P 5350 5900
-F 0 "SW1" H 5350 6185 50  0000 C CNN
-F 1 "SW_Push" H 5350 6094 50  0000 C CNN
-F 2 "" H 5350 6100 50  0001 C CNN
-F 3 "~" H 5350 6100 50  0001 C CNN
-	1    5350 5900
-	1    0    0    -1  
+P 5100 5450
+F 0 "SW1" H 5100 5735 50  0000 C CNN
+F 1 "SW_Push" H 5100 5644 50  0000 C CNN
+F 2 "" H 5100 5650 50  0001 C CNN
+F 3 "~" H 5100 5650 50  0001 C CNN
+	1    5100 5450
+	0    1    1    0   
 $EndComp
 $Comp
 L Switch:SW_Push SW2
 U 1 1 5E50794B
-P 6350 5900
-F 0 "SW2" H 6350 6185 50  0000 C CNN
-F 1 "SW_Push" H 6350 6094 50  0000 C CNN
-F 2 "" H 6350 6100 50  0001 C CNN
-F 3 "~" H 6350 6100 50  0001 C CNN
-	1    6350 5900
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR?
-U 1 1 5E50816E
-P 4750 5650
-F 0 "#PWR?" H 4750 5500 50  0001 C CNN
-F 1 "+5V" H 4765 5823 50  0000 C CNN
-F 2 "" H 4750 5650 50  0001 C CNN
-F 3 "" H 4750 5650 50  0001 C CNN
-	1    4750 5650
-	1    0    0    -1  
+P 5750 5450
+F 0 "SW2" H 5750 5735 50  0000 C CNN
+F 1 "SW_Push" H 5750 5644 50  0000 C CNN
+F 2 "" H 5750 5650 50  0001 C CNN
+F 3 "~" H 5750 5650 50  0001 C CNN
+	1    5750 5450
+	0    1    1    0   
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5E508C95
-P 4750 5950
-F 0 "#PWR?" H 4750 5700 50  0001 C CNN
-F 1 "GND" H 4755 5777 50  0000 C CNN
-F 2 "" H 4750 5950 50  0001 C CNN
-F 3 "" H 4750 5950 50  0001 C CNN
-	1    4750 5950
+P 5100 6200
+F 0 "#PWR?" H 5100 5950 50  0001 C CNN
+F 1 "GND" H 5105 6027 50  0000 C CNN
+F 2 "" H 5100 6200 50  0001 C CNN
+F 3 "" H 5100 6200 50  0001 C CNN
+	1    5100 6200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -211,7 +200,7 @@ F 3 "" H 6550 2850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 4550 950  0    157  ~ 0
-Addressable LED's WS2812
+Addressable LED's
 Wire Notes Line
 	4450 4350 4450 650 
 Wire Notes Line
@@ -727,4 +716,206 @@ Wire Wire Line
 	7750 4000 7750 4100
 Wire Wire Line
 	7750 3700 7750 3650
+$Comp
+L Device:R R_SW1
+U 1 1 5E473993
+P 5100 5900
+F 0 "R_SW1" V 4893 5900 50  0000 C CNN
+F 1 "10k" V 4984 5900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5030 5900 50  0001 C CNN
+F 3 "~" H 5100 5900 50  0001 C CNN
+	1    5100 5900
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5E481603
+P 5100 5150
+F 0 "#PWR?" H 5100 5000 50  0001 C CNN
+F 1 "+3.3V" H 5115 5323 50  0000 C CNN
+F 2 "" H 5100 5150 50  0001 C CNN
+F 3 "" H 5100 5150 50  0001 C CNN
+	1    5100 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5E481DFB
+P 800 7000
+F 0 "#PWR?" H 800 6850 50  0001 C CNN
+F 1 "+3.3V" H 815 7173 50  0000 C CNN
+F 2 "" H 800 7000 50  0001 C CNN
+F 3 "" H 800 7000 50  0001 C CNN
+	1    800  7000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	800  7000 1350 7000
+$Comp
+L power:GND #PWR?
+U 1 1 5E486187
+P 1050 6700
+F 0 "#PWR?" H 1050 6450 50  0001 C CNN
+F 1 "GND" H 1055 6527 50  0000 C CNN
+F 2 "" H 1050 6700 50  0001 C CNN
+F 3 "" H 1050 6700 50  0001 C CNN
+	1    1050 6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 6700 1200 6700
+Wire Wire Line
+	1200 6700 1200 6900
+Wire Wire Line
+	1200 6900 1350 6900
+$Comp
+L power:+5V #PWR?
+U 1 1 5E489E5C
+P 3050 7000
+F 0 "#PWR?" H 3050 6850 50  0001 C CNN
+F 1 "+5V" H 3065 7173 50  0000 C CNN
+F 2 "" H 3050 7000 50  0001 C CNN
+F 3 "" H 3050 7000 50  0001 C CNN
+	1    3050 7000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 7000 2750 7000
+Text GLabel 4950 5700 0    50   Input ~ 0
+SW1
+Wire Wire Line
+	5100 5150 5100 5250
+Wire Wire Line
+	5100 5650 5100 5700
+Wire Wire Line
+	5100 6050 5100 6100
+Wire Wire Line
+	4950 5700 5100 5700
+Connection ~ 5100 5700
+Wire Wire Line
+	5100 5700 5100 5750
+Wire Wire Line
+	5100 5250 5750 5250
+Connection ~ 5100 5250
+$Comp
+L Switch:SW_Push SW3
+U 1 1 5E49B735
+P 6450 5450
+F 0 "SW3" H 6450 5735 50  0000 C CNN
+F 1 "SW_Push" H 6450 5644 50  0000 C CNN
+F 2 "" H 6450 5650 50  0001 C CNN
+F 3 "~" H 6450 5650 50  0001 C CNN
+	1    6450 5450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5750 5250 6450 5250
+Connection ~ 5750 5250
+$Comp
+L Switch:SW_Push SW4
+U 1 1 5E49D485
+P 7150 5450
+F 0 "SW4" H 7150 5735 50  0000 C CNN
+F 1 "SW_Push" H 7150 5644 50  0000 C CNN
+F 2 "" H 7150 5650 50  0001 C CNN
+F 3 "~" H 7150 5650 50  0001 C CNN
+	1    7150 5450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7150 5250 6450 5250
+Connection ~ 6450 5250
+Text GLabel 5600 5700 0    50   Input ~ 0
+SW2
+Text GLabel 6300 5700 0    50   Input ~ 0
+SW3
+Text GLabel 7000 5700 0    50   Input ~ 0
+SW4
+$Comp
+L Device:R R_SW2
+U 1 1 5E49F95B
+P 5750 5900
+F 0 "R_SW2" V 5543 5900 50  0000 C CNN
+F 1 "10k" V 5634 5900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5680 5900 50  0001 C CNN
+F 3 "~" H 5750 5900 50  0001 C CNN
+	1    5750 5900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R_SW3
+U 1 1 5E49FD61
+P 6450 5900
+F 0 "R_SW3" V 6243 5900 50  0000 C CNN
+F 1 "10k" V 6334 5900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6380 5900 50  0001 C CNN
+F 3 "~" H 6450 5900 50  0001 C CNN
+	1    6450 5900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R_SW4
+U 1 1 5E4A00BB
+P 7150 5900
+F 0 "R_SW4" V 6943 5900 50  0000 C CNN
+F 1 "10k" V 7034 5900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7080 5900 50  0001 C CNN
+F 3 "~" H 7150 5900 50  0001 C CNN
+	1    7150 5900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5750 5650 5750 5700
+Wire Wire Line
+	6450 5650 6450 5700
+Wire Wire Line
+	7150 5650 7150 5700
+Wire Wire Line
+	5600 5700 5750 5700
+Connection ~ 5750 5700
+Wire Wire Line
+	5750 5700 5750 5750
+Wire Wire Line
+	6300 5700 6450 5700
+Connection ~ 6450 5700
+Wire Wire Line
+	6450 5700 6450 5750
+Wire Wire Line
+	7000 5700 7150 5700
+Connection ~ 7150 5700
+Wire Wire Line
+	7150 5700 7150 5750
+Wire Wire Line
+	5100 6100 5750 6100
+Wire Wire Line
+	5750 6100 5750 6050
+Connection ~ 5100 6100
+Wire Wire Line
+	5100 6100 5100 6200
+Wire Wire Line
+	5750 6100 6450 6100
+Wire Wire Line
+	6450 6100 6450 6050
+Connection ~ 5750 6100
+Wire Wire Line
+	6450 6100 7150 6100
+Wire Wire Line
+	7150 6100 7150 6050
+Connection ~ 6450 6100
+Text GLabel 1100 5700 0    50   Input ~ 0
+SW1
+Text GLabel 1100 5800 0    50   Input ~ 0
+SW2
+Text GLabel 1100 5900 0    50   Input ~ 0
+SW3
+Text GLabel 1100 6000 0    50   Input ~ 0
+SW4
+Wire Wire Line
+	1100 5700 1350 5700
+Wire Wire Line
+	1100 5800 1350 5800
+Wire Wire Line
+	1100 5900 1350 5900
+Wire Wire Line
+	1100 6000 1350 6000
 $EndSCHEMATC
