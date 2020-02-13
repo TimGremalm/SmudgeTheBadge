@@ -96,7 +96,7 @@ L Device:CP CP1
 U 1 1 5E485E89
 P 2600 2450
 F 0 "CP1" H 2718 2496 50  0000 L CNN
-F 1 "CP" H 2718 2405 50  0000 L CNN
+F 1 "100µF" H 2718 2405 50  0000 L CNN
 F 2 "" H 2638 2300 50  0001 C CNN
 F 3 "~" H 2600 2450 50  0001 C CNN
 	1    2600 2450
@@ -158,10 +158,10 @@ F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812.pdf" H 10350 5525 50  0001 
 	1    0    0    -1  
 $EndComp
 $Comp
-L ESP32:ESP32-PICO-KIT U?
+L ESP32:ESP32-PICO-KIT U1
 U 1 1 5E4A2CF5
 P 6100 2350
-F 0 "U?" H 6100 3565 50  0000 C CNN
+F 0 "U1" H 6100 3565 50  0000 C CNN
 F 1 "ESP32-PICO-KIT" H 6100 3474 50  0000 C CNN
 F 2 "ESP32:ESP32-PICO-KIT_Jumper" H 5975 2850 50  0001 C CNN
 F 3 "https://dl.espressif.com/dl/schematics/esp32-pico-kit-v4_schematic.pdf" H 5975 2850 50  0001 C CNN
@@ -487,7 +487,7 @@ Wire Notes Line
 Wire Notes Line
 	4500 3900 4500 650 
 Text Notes 750  950  0    157  ~ 0
-Battery Hold 3xAA
+Battery Holder 3xAA
 $Comp
 L power:+5V #PWR?
 U 1 1 5E4F73B8
