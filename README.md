@@ -1,4 +1,4 @@
-# LightBoxNano# SmudgeTheBadge
+# Smudge The Badge
 A badge for the conference foss-north 2020 with ESP32 and a few LED's.
 
 It's got a image of Smudge the cat in the silk screen with two white boxes for populating text to complete the meme.
