@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name ESP32)(type Legacy)(uri ${KIPRJMOD}/ESP32.lib)(options "")(descr ""))
+  (lib (name ws2812)(type Legacy)(uri ${KIPRJMOD}/ws2812.lib)(options "")(descr ""))
 )
